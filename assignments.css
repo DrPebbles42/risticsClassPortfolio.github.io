@@ -1,0 +1,35 @@
+html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+nav {
+    text-align: center;
+    margin-top: 30px;
+}
+
+nav ul {
+    list-style: none;   /* No bullet points */
+    display: inline;    /* Displays the navigation bar centered */
+    margin: 0px;        /* Actually centered, not off centered */
+    padding: 0px;       /* Actually centered, not off centered */
+}
+
+nav ul li {
+    display: inline;
+    padding-left: 10px;
+    font-size: 15pt;
+}
+
+nav ul li a:link {
+    text-decoration: none;  /* Removes the underlines */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a:active {
+    font-weight: bold;
+}
