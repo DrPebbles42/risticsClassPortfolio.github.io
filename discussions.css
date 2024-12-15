@@ -1,0 +1,149 @@
+html {
+    padding: 0;
+    margin: 0;
+    height: auto;
+    background-color: #D2B48C;
+}
+
+body {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    min-height: 100vh;
+    flex-direction: column;
+    padding-bottom: 1px;
+    background-color: #D2B48C;
+}
+
+#Top {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    box-shadow: -5px 5px 5px black;
+    background-color: rgb(255, 255, 0);
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 3px;
+}
+
+#Week {
+    text-align: center;
+    margin-top: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#weekTitle {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul {
+    list-style: none;
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li {
+    display: inline;
+    padding-left: 15px;
+}
+
+nav ul li a:link {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a:active {
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 100px;
+}
+
+header {
+    background-image: url("greenNote.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10px;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    box-shadow: -5px 5px 5px black;
+    text-align: center;
+}
+
+.Discussions {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.photo {
+    max-width: 70%;
+    height: auto;
+    box-shadow: -5px 5px 5px black;
+    text-align: center;
+}
+
+.arrow {
+    cursor: pointer;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 17pt;
+    background-image: url("paperBG.jpg");
+    opacity: 0.9;
+    box-shadow: -5px 5px 5px black;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.arrow::after {
+    content: '\25B6'; /* Right-pointing triangle */
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.arrow.expanded::after {
+    transform: rotate(90deg); /*Down-pointing triangle*/
+}
+
+.arrow.expanded + .Discussions {
+    display: block;
+}
+
+.postItGreen {
+    background-image: url("greenNote.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: -5px 5px 5px black;
+}
+
+.postItYellow {
+    background-image: url("yellowNote.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: -5px 5px 5px black;
+}
+
+p {
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}

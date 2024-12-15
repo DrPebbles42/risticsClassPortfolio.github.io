@@ -2,16 +2,32 @@ html {
     padding: 0;
     margin: 0;
     height: 100%;
+    background-color: #D2B48C;
 }
 
 body {
-    font-size: 10pt;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1px;
+    background-color: #D2B48C;
+}
+
+header {
+    background-image: url("greenNote.png");
+    background-size: cover;
+    margin-top: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    box-shadow: -5px 5px 5px black;
 }
 
 h1 {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 100px;
 }
 
 h2 {
@@ -21,6 +37,12 @@ h2 {
 nav {
     text-align: center;
     margin-top: 30px;
+    background-color: rgb(255, 255, 0);
+    box-shadow: -5px 5px 5px black;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 25px;
+    padding: 10px;
 }
 
 nav ul {
@@ -32,8 +54,11 @@ nav ul {
 
 nav ul li {
     display: inline;
-    padding-left: 10px;
-    font-size: 15pt;
+    padding-left: 15px;
+}
+
+nav ul li a {
+    color: rgb(72, 0, 255);
 }
 
 nav ul li a:link {
@@ -53,17 +78,38 @@ h3 {
 }
 
 #intro {
-    border: solid 1px black;
     margin: 1% 25%;
     text-align: center;
 }
 
-footer {
-    width: 100%;
-    height: 28px;
-    border-top: 1px solid black;
-    position: aboslute;
-    bottom: 0px;
-    left: 0px;
-    text-align: center;
+#professional {
+    background-image: url("yellowNote.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: -5px 5px 5px black;
+    padding-bottom: 10px;
+}
+
+h4 {
+    margin-top: 10px;
+}
+
+#professional p {
+    padding-top: 10px;
+}
+
+#personal {
+    background-image: url("greenNote.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: -5px 5px 5px black;
+    padding-bottom: 10px;
+}
+
+#personal h4 {
+    padding-top: 90px
+}
+
+#personal p {
+    padding-top: 10px;
 }
